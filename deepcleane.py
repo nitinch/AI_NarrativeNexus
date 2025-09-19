@@ -80,4 +80,6 @@ if __name__ == "__main__":
 
     # Save cleaned dataset
     df.to_excel(output_path, index=False, engine="openpyxl")
+    df.to_csv("processed/20news_18828_final_50.csv", index=False, encoding="utf-8")
+
     print(f"✅ Final dataset saved: {len(df)} rows, cleaned text only → {output_path}")
